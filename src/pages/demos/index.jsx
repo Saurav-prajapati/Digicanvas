@@ -141,7 +141,7 @@ const Demos = () => {
 
                 <div className="bactxt custom-font valign">
                   <span className="full-width" style={{ color: "transparent" }}>
-                    avo
+                    Digicanvas
                   </span>
                 </div>
               </div>
@@ -580,7 +580,7 @@ const Demos = () => {
           <div className="container">
             <div className="copyrights text-center mt-0">
               <p>
-                © 2022, Avo Template. Made with passion by
+                © 2022, Digicanvas Template. Made with passion by
                 <a href="#0">ThemesCamp</a>.
               </p>
             </div>

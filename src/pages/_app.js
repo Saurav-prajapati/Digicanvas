@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Digicanvas - Digital Agency</title>
-        <link rel="icon" href="/img/favicon.ico" />
+        <link rel="icon" href="/img/fav.ico" />
       </Head>
       <Cursor />
       <LoadingScreen />
