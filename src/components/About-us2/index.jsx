@@ -39,19 +39,20 @@ const AboutUs2 = ({ skillsTheme }) => {
                   className="co-tit custom-font wow words chars splitting"
                   data-splitting
                 >
-                  Our 20 years working experience make a different business
-                  agency services.
+                  About Digicanvas
                 </h3>
               </Split>
               <p className="wow fadeInUp" data-wow-delay=".4s">
-                We are Digicanvas start. We create award-winning websites, remarkable brands
-                and cutting-edge apps.Nullam imperdiet, sem at fringilla
-                lobortis, sem nibh fringilla nibh, id gravida mi purus sit amet
-                erat. Ut dictum nisi masvitp.
+                At Digicanvas, we are a dynamic startup on a mission to
+                revolutionize the digital landscape. Our passion lies in
+                crafting compelling digital experiences that leave a lasting
+                impact.
               </p>
               <p className="mt-10 wow fadeInUp" data-wow-delay=".4s">
-                Nulla metus metus ullamcorper vel tincidunt sed euismod nibh
-                volutpat velit class aptent taciti sociosqu ad litora.
+                Driven by innovation and creativity, we specialize in providing
+                tailored solutions to meet the diverse needs of our clients.
+                Whether you're a budding entrepreneur or an established
+                enterprise, we're here to empower your digital journey.
               </p>
               <Split>
                 <Link href="#">

@@ -14,30 +14,29 @@ const Services3 = () => {
           <div className="col-lg-4 wow fadeInUp" data-wow-delay=".3s">
             <div className="step-item xtop">
               <span className="icon pe-7s-gleam"></span>
-              <h6>Digital Marketing</h6>
+              <h6>Website Design & Development</h6>
               <p>
-                Tempore corrupti temporibus fuga earum asperiores fugit
-                laudantium.
+                Tailored, seamless, captivating digital experiences across all
+                devices.
               </p>
             </div>
           </div>
           <div className="col-lg-4 wow fadeInUp" data-wow-delay=".6s">
             <div className="step-item xcolor">
               <span className="icon pe-7s-phone"></span>
-              <h6>Web &amp; App Development</h6>
+              <h6>Graphic Design & Branding</h6>
               <p>
-                Tempore corrupti temporibus fuga earum asperiores fugit
-                laudantium.
+                Striking visuals tailored to resonate with your audience and
+                reflect your brand's identity.
               </p>
             </div>
           </div>
           <div className="col-lg-4 wow fadeInUp" data-wow-delay=".9s">
             <div className="step-item xbottom">
               <span className="icon pe-7s-magic-wand"></span>
-              <h6>Graphic Design</h6>
+              <h6>Digital Marketing Strategy</h6>
               <p>
-                Tempore corrupti temporibus fuga earum asperiores fugit
-                laudantium.
+                Data-driven campaigns maximizing online presence and engagement.
               </p>
             </div>
           </div>

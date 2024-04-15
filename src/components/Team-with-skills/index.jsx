@@ -2,14 +2,26 @@
 import React from "react";
 import tooltipEffect from "../../common/tooltipEffect";
 import teamSkillsProgress from "../../common/teamSkillsProgress";
+import Split from "../Split";
 
 const TeamWithSkills = () => {
   React.useEffect(() => {
-    tooltipEffect()
-    teamSkillsProgress()
-  }, [])
+    tooltipEffect();
+    teamSkillsProgress();
+  }, []);
   return (
     <div className="team-crv section-padding">
+      <div className="sec-head custom-font text-center">
+        <h6 className="wow fadeIn" data-wow-delay=".5s">
+          Team
+        </h6>
+        <Split>
+          <h3 className="wow words chars splitting" data-splitting>
+            Our Teams.
+          </h3>
+        </Split>
+        <span className="tbg">Team</span>
+      </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-5 valign">
@@ -21,23 +33,26 @@ const TeamWithSkills = () => {
                 <span></span>
               </div>
               <h3 className="co-tit custom-font mb-15">
-                We help to create visual strategies.
+                Meet Our Dynamic Team
               </h3>
               <p>
-                We are Digicanvas. We create award-winning websites, remarkable brands
-                and cutting-edge apps.Nullam imperdie.
+                At Digicanvas, our strength lies in our people. We're a diverse
+                team of passionate individuals, each bringing unique skills and
+                perspectives to the table. Together, we're united by a common
+                goal: to redefine the digital landscape and empower our clients
+                to succeed.
               </p>
               <div className="skills-box mt-40">
                 <div className="skill-item">
-                  <h6 className="custom-font">UI / UX Design</h6>
+                  <h6 className="custom-font">Web & Software Development</h6>
                   <div className="skill-progress">
-                    <div className="progres custom-font" data-value="90%"></div>
+                    <div className="progres custom-font" data-value="100%"></div>
                   </div>
                 </div>
                 <div className="skill-item">
-                  <h6 className="custom-font">Apps Development</h6>
+                  <h6 className="custom-font">Graphic Design</h6>
                   <div className="skill-progress">
-                    <div className="progres custom-font" data-value="80%"></div>
+                    <div className="progres custom-font" data-value="100%"></div>
                   </div>
                 </div>
               </div>
@@ -49,16 +64,16 @@ const TeamWithSkills = () => {
                 <div className="col-sm-6 toright">
                   <div className="full-width">
                     <div
-                      className="img sizxl mb-30"
-                      data-tooltip-tit="Stephanie Lawrence"
-                      data-tooltip-sub="CEO, Colabrio Media"
+                      className="img sizmd mb-30"
+                      data-tooltip-tit="Varsha Pawar"
+                      data-tooltip-sub="Human Resources"
                     >
                       <img src="/img/team/1.jpg" alt="" className="imago wow" />
                     </div>
                     <div
-                      className="img sizmd"
-                      data-tooltip-tit="Alex Regelman"
-                      data-tooltip-sub="Co-Founder, Colabrio Media"
+                      className="img sizxl"
+                      data-tooltip-tit="Anup Sharma"
+                      data-tooltip-sub="Graphic Designer"
                     >
                       <img src="/img/team/2.jpg" alt="" className="imago wow" />
                     </div>
@@ -67,18 +82,18 @@ const TeamWithSkills = () => {
                 <div className="col-sm-6 toleft valign">
                   <div className="full-width text-left">
                     <div
-                      className="img sizmd mb-30"
-                      data-tooltip-tit="Stacey Stamper"
-                      data-tooltip-sub="Network Partner, Colabrio Media"
+                      className="img sizxl mb-30"
+                      data-tooltip-tit="Avantika"
+                      data-tooltip-sub="Human Resources"
                     >
-                      <img src="/img/team/3.jpg" alt="" className="imago wow" />
+                      <img src="/img/team/1.jpg" alt="" className="imago wow" />
                     </div>
                     <div
                       className="img sizsm"
-                      data-tooltip-tit="Stephanie Lawrence"
-                      data-tooltip-sub="CEO, Colabrio Media"
+                      data-tooltip-tit="Nitin Patil"
+                      data-tooltip-sub="Full Stack Developer"
                     >
-                      <img src="/img/team/4.jpg" alt="" className="imago wow" />
+                      <img src="/img/team/2.jpg" alt="" className="imago wow" />
                     </div>
                   </div>
                 </div>
@@ -91,4 +106,4 @@ const TeamWithSkills = () => {
   );
 };
 
-export default TeamWithSkills
+export default TeamWithSkills;

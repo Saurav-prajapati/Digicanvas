@@ -10,6 +10,7 @@ import Testimonials1 from "../../components/Testimonials1";
 import Works2Slider from "../../components/Works2-slider";
 import DarkTheme from "../../layouts/Dark";
 import ContactUs from "../../components/Contact-section";
+import Team from "../../components/Team-with-skills";
 
 const Homepage3 = () => {
   const navbarRef = React.useRef(null);
@@ -39,6 +40,7 @@ const Homepage3 = () => {
       <Services3 />
       <NumbersWithVideo />
       <Works2Slider subBG />
+      <Team />
       <Testimonials1 />
       <BlogsThreeColumn1 subBG />
       <ContactUs />

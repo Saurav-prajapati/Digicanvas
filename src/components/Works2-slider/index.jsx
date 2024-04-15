@@ -27,7 +27,8 @@ const Works2Slider = ({ subBG }) => {
       <Head>
         <link rel="stylesheet" href="/css/ionicons.min.css" />
       </Head>
-      <section id="works"
+      <section
+        id="works"
         className={`work-carousel section-padding caroul ${
           subBG ? "sub-bg" : ""
         } position-re`}
@@ -109,16 +110,16 @@ const Works2Slider = ({ subBG }) => {
                           ></div>
                           <div className="cont bgbox">
                             <h6>
-                              <Link href="#">
-                                art &amp; illustration
+                              <Link href="https://sriditya.com/">
+                                Wordpress
                               </Link>
                             </h6>
                             <h4>
-                              <Link href="#">
-                                <a>Innovation and Crafts.</a>
+                              <Link href="https://sriditya.com/">
+                                <a>Sriditya</a>
                               </Link>
                             </h4>
-                            <Link href="#">
+                            <Link href="https://sriditya.com/">
                               <a>
                                 <span className="icon">
                                   <i className="fas fa-plus"></i>
@@ -141,16 +142,14 @@ const Works2Slider = ({ subBG }) => {
                           ></div>
                           <div className="cont bgbox">
                             <h6>
-                              <Link href="#">
-                                art &amp; illustration
-                              </Link>
+                              <Link href="https://elementssupply.com/">Shopify</Link>
                             </h6>
                             <h4>
-                              <Link href="#">
-                                <a>Inspiring new space.</a>
+                              <Link href="https://elementssupply.com/">
+                                <a>Elementssupply</a>
                               </Link>
                             </h4>
-                            <Link href="#">
+                            <Link href="https://elementssupply.com/">
                               <a>
                                 <span className="icon">
                                   <i className="fas fa-plus"></i>
@@ -173,16 +172,14 @@ const Works2Slider = ({ subBG }) => {
                           ></div>
                           <div className="cont bgbox">
                             <h6>
-                              <Link href="#">
-                                art &amp; illustration
-                              </Link>
+                              <Link href="https://www.tellius.com/">Wordpress</Link>
                             </h6>
                             <h4>
-                              <Link href="#">
-                                <a>Natural plus modern.</a>
+                              <Link href="https://www.tellius.com/">
+                                <a>Tellius</a>
                               </Link>
                             </h4>
-                            <Link href="#">
+                            <Link href="https://www.tellius.com/">
                               <a>
                                 <span className="icon">
                                   <i className="fas fa-plus"></i>
@@ -205,16 +202,14 @@ const Works2Slider = ({ subBG }) => {
                           ></div>
                           <div className="cont bgbox">
                             <h6>
-                              <Link href="#">
-                                art &amp; illustration
-                              </Link>
+                              <Link href="https://gurusaurav.live/">Nextjs</Link>
                             </h6>
                             <h4>
-                              <Link href="#">
-                                <a>Innovation and Crafts.</a>
+                              <Link href="https://gurusaurav.live/">
+                                <a>Guru Saurav Portfolio</a>
                               </Link>
                             </h4>
-                            <Link href="#">
+                            <Link href="https://gurusaurav.live/">
                               <a>
                                 <span className="icon">
                                   <i className="fas fa-plus"></i>
@@ -237,16 +232,14 @@ const Works2Slider = ({ subBG }) => {
                           ></div>
                           <div className="cont bgbox">
                             <h6>
-                              <Link href="#">
-                                art &amp; illustration
-                              </Link>
+                              <Link href="https://www.hootyballoo.com/">Shopify</Link>
                             </h6>
                             <h4>
-                              <Link href="#">
-                                <a>Inspiring new space.</a>
+                              <Link href="https://www.hootyballoo.com/">
+                                <a>Hootyballoo</a>
                               </Link>
                             </h4>
-                            <Link href="#">
+                            <Link href="https://www.hootyballoo.com/">
                               <a>
                                 <span className="icon">
                                   <i className="fas fa-plus"></i>

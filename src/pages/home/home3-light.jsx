@@ -8,6 +8,7 @@ import NumbersWithVideo from "../../components/Numbers-with-video";
 import Services3 from "../../components/Services3";
 import Testimonials1 from "../../components/Testimonials1";
 import Works2Slider from "../../components/Works2-slider";
+import Team from "../../components/Team1";
 import LightTheme from "../../layouts/Light";
 import appData from "../../data/app.json";
 
@@ -43,6 +44,7 @@ const Homepage3 = () => {
       <NumbersWithVideo theme="light" />
       <Works2Slider subBG />
       <Testimonials1 />
+      <Team />
       <BlogsThreeColumn1 subBG />
       <Footer />
     </LightTheme>

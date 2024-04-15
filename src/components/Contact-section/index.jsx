@@ -1,7 +1,7 @@
 import React from "react";
 import Split from "../Split";
 import { Formik, Form, Field } from "formik";
-import axios from 'axios';
+import axios from "axios";
 
 const ContactSection = () => {
   const messageRef = React.useRef(null);
@@ -38,32 +38,44 @@ const ContactSection = () => {
                   email: "",
                   message: "",
                 }}
-                onSubmit={async (values) => {
+                onSubmit={async (values, { setSubmitting }) => {
+                  setSubmitting(true);
                   await sendMessage(500);
                   // alert(JSON.stringify(values, null, 2));
                   // show message
                   const formData = new FormData();
 
-                  formData.append('name', values.name);
-                  formData.append('email', values.email);
-                  formData.append('message', values.message);
-                  const res = await axios.post('/contact.php', formData);
+                  formData.append("name", values.name);
+                  formData.append("email", values.email);
+                  formData.append("message", values.message);
 
-                  if (!res) return;
-
-                  messageRef.current.innerText =
-                    "Your Message has been successfully sent. I will contact you soon.";
-                  // Reset the values
-                  values.name = "";
-                  values.email = "";
-                  values.message = "";
-                  // clear message
-                  setTimeout(() => {
-                    messageRef.current.innerText = "";
-                  }, 2000);
+                  try {
+                    const res = await axios.post(
+                      "https://formspree.io/f/xbjnpvek",
+                      formData
+                    );
+                    if (res.status === 200) {
+                      messageRef.current.innerText =
+                        "Your Message has been successfully sent. I will contact you soon.";
+                      // Reset the values
+                      values.name = "";
+                      values.email = "";
+                      values.message = "";
+                      // clear message
+                      setTimeout(() => {
+                        messageRef.current.innerText = "";
+                      }, 2000);
+                    }
+                  } catch (error) {
+                    console.error("Error submitting form:", error);
+                    messageRef.current.innerText =
+                      "There was an error submitting your message. Please try again later.";
+                  } finally {
+                    setSubmitting(false);
+                  }
                 }}
               >
-                {({ errors, touched }) => (
+                {({ errors, touched, isSubmitting }) => (
                   <Form id="contact-form">
                     <div className="messages" ref={messageRef}></div>
 
@@ -112,6 +124,7 @@ const ContactSection = () => {
                             <button
                               type="submit"
                               className="simple-btn custom-font cursor-pointer"
+                              disabled={isSubmitting}
                             >
                               <span>Send Message</span>
                             </button>
